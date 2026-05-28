@@ -1,0 +1,3 @@
+temp=float(input())
+feren=(temp*(9/5))+32
+print(f"{feren:.2f}")
