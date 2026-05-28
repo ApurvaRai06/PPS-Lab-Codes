@@ -1,0 +1,24 @@
+# Input marks of four subjects
+m1, m2, m3, m4 = map(int, input().split())
+
+# Calculate total and aggregate percentage
+total = m1 + m2 + m3 + m4
+percentage = total / 4
+
+# Determine grade
+if percentage > 75:
+    grade = "Distinction"
+elif percentage >= 60 and percentage < 75:
+    grade = "First Division"
+elif percentage >= 50 and percentage < 60:
+    grade = "Second Division"
+elif percentage >= 40 and percentage < 50:
+    grade = "Third Division"
+else:
+    grade = "Fail"
+
+# Output
+print(total)
+print(f"{percentage:.2f}")
+print(grade)
+
