@@ -1,0 +1,12 @@
+# Type Content here..
+# Input
+text = input()
+
+# Remove punctuation
+result = ""
+for char in text:
+    if char.isalnum() or char == " ":
+        result += char
+
+# Output
+print(result)
